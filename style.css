@@ -1,0 +1,17 @@
+.awesome-table-border {
+  border: 10px solid;
+  width: 100%;
+  color: #ae2222;
+  align-items: center;
+}
+
+.not-so-awesome-body {
+  background-color: blanchedalmond;
+  color: black;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td {
+  border: 5px solid;
+  color: black;
+}
