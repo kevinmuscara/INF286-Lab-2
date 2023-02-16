@@ -1,8 +1,14 @@
-[GET] - https://api.weather.gov/points/{latitude},{longitude}
+I used the GET request method.
 
-URL Parameters: latitude, longitude
-Values Provided (Highland Heights, KY): 39.0312, -84.4625
-Data Response:
+The URL parameters took latitude and longitude as described below:
+https://api.weather.gov/points/{latitude},{longitude}
+
+I provided the latitude and longitude values for Highland Heights KY: 39.0312, -84.4625
+
+From the response data below, I was able to see the api version is 1.1. The office and grid for the lat/long location I provided is ILN, X = 37, Y = 34.
+I was also able to see with sub routes provided within the hourly forecast data, where at the time of the lab, the current temperature is 61F.
+
+Response Data:
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
