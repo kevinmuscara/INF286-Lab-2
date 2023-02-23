@@ -5,23 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kevin Muscara</title>
   <link rel="stylesheet" href="./style.css">
+  
+  <!-- Lab 7 (Part 2): Bootstrap UI -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  <!-- Lab 7 (Part 2): Google Font Family -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  
+  <!-- Lab 7 (Part 1): External JS File -->
+  <script src="./index.js"></script>
 </head>
 <body class="not-so-awesome-body">
-  <h1>Kevin Muscara</h1>
-
+  <!-- Lab 7 (Part 2): Google Font Family -->
+  <h1 style="font-family: 'Sofia', sans-serif;">Kevin Muscara</h1>
   <p>I'm a Deans list undergraduate student at Northern Kentucky University studying Applied Software Engineering and minoring in Computer Science.</p>
   <a href="https://github.com/kevinmuscara">Click here to visit my GitHub</a>
+  
+  <br />
   <br />
 
-  <h3>About Me</h3>
-
+  <h3>Fake login form</h3>
   <form>
     <label for="name">Email</label>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" /><br>
     <label for="password">Password</label>
-    <input type="password" id="password" name="password">
-    <input type="submit" value="Login"></input>
+    <input type="password" id="password" name="password" /><br>
+    <input type="button" value="Login" id="loginButton"/><br>
   </form>
+
+  <br />
+  
+  <!-- Lab 7 (Part 1): Largest Number in list -->
+  <h2>Random List of Numbers</h2>
+  <p onclick="generateNewList()">
+    <!-- Lab 7 (Part 2 Bonus): Icon from Font Awesome -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px" height="50px">
+      <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+      <path d="M89.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L370.3 160H320c-17.7 0-32 14.3-32 32s14.3 32 32 32H447.5c0 0 0 0 0 0h.4c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L398.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C57.2 122 39.6 150.7 28.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM23 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1V448c0 17.7 14.3 32 32 32s32-14.3 32-32V396.9l17.6 17.5 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L109.6 352H160c17.7 0 32-14.3 32-32s-14.3-32-32-32H32.4c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/>
+    </svg>
+  </p>
+  <strong>
+    <p id="numbers" onclick="generateNewList()">10, 20, 44, 2, 33</p>
+  </strong>
+  <p id="result" onclick="eventHandler()">Click me to find the largest number in the list above.</p>
+  <br />
+
+  <!-- Lab 7 (Part 1): HTTP API Request -->
+  <h2>My Location Temperature</h2>
+  <p id="result2" onclick="eventHandler2()">Click me to get the current temperature in my location</p>
+  <br />
   
   <p>
     My Interests
